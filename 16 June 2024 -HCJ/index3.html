@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      // Prompt the user to enter the hour
+      const hour = parseInt(prompt('Please enter the hour (0-23):'), 10);
+
+      // Check if the input is a valid number and within the range
+      if (!isNaN(hour) && hour >= 0 && hour <= 23) {
+        if (hour >= 6 && hour <= 12) {
+          console.log('Good morning!');
+        } else if (hour >= 13 && hour <= 17) {
+          console.log('Good afternoon!');
+        } else {
+          console.log('Good night!');
+        }
+      } else {
+        console.log('Invalid input! Please enter a number between 0 and 23.');
+      }
+    </script>
+  </body>
+</html>
